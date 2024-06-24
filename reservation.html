@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="all-pages">
+      <div class="nav-container">
+        <div class="container">
+          <div class="navbar-mobile-container">
+            <div class="mobile-size-logo">
+              <img src="img/logo-color-1.png" alt="" />
+            </div>
+            <div class="nav-icon">
+              <a onclick="mobileNavbar()"
+                ><img src="img/icon-menu.svg" alt=""
+              /></a>
+            </div>
+            <div class="navbar-mobile-size" id="navbar-mobile-size">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar">
+            <div class="left-side">
+              <a href=""><img src="img/logo-color-1.png" alt="" /></a>
+            </div>
+            <div class="right-side">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start about-us page -->
+
+    <div class="reservation-pg">
+      <div class="reservation-pa-bg">
+        <!-- <div class="reservation-pg-header">
+      <h2>reservation us</h2>
+    </div> -->
+      </div>
+      <div class="container-2">
+        <div class="reservation-pg-content">
+          <div class="reservation-form">
+            <form action="">
+              <div class="form-header">
+                <ul class="tab-list">
+                  <li class="form-tab form-tab-active">
+                    <a href="">
+                      <span class="form-tab-item">
+                        <span class="form-tab-icon"
+                          ><i class="fa-regular fa-user"></i
+                        ></span>
+                        <span class="form-icon-title">Personal</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="form-tab ">
+                    <a href="">
+                      <span class="form-tab-item">
+                        <span class="form-tab-icon"
+                          ><i class="fa-regular fa-envelope"></i
+                        ></span>
+                        <span class="form-icon-title">Rooms</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="form-tab">
+                    <a href="">
+                      <span class="form-tab-item">
+                        <span class="form-tab-icon"
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="form-icon-title">Address</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="form-tab">
+                    <a href="">
+                      <span class="form-tab-item">
+                        <span class="form-tab-icon"
+                          ><i class="fa-regular fa-credit-card"></i
+                        ></span>
+                        <span class="form-icon-title">Payment</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="form-content">
+                  <!-- Page 1 -->
+                <fieldset
+                  id="signup-form-p-0"
+                  role="tabpanel"
+                  aria-labelledby="signup-form-h-0"
+                  class=""
+                  aria-hidden="false"
+                  style="display: none; "
+                >
+                  <legend>
+                    <span class="step-heading">Personal Information: </span>
+                    <span class="step-number">Step 1 / 4</span>
+                  </legend>
+                  <div class="form-group">
+                    <label for="first_name" class="form-label required"
+                      >First name</label
+                    >
+                    <input type="text" name="first_name" id="first_name" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="last_name" class="form-label required"
+                      >Last name</label
+                    >
+                    <input type="text" name="last_name" id="last_name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label required">Email</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label required"
+                      >Phone Number</label
+                    >
+                    <input type="tel" name="phone" id="phone" />
+                    <!-- <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" required> -->
+                  </div>
+                  <div class="form-group">
+                    <label for="company_name" class="form-label required">
+                      Company Name</label
+                    >
+                    <input type="text" name="company_name" id="company_name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="hotel_name" class="form-label required">
+                      Hotel Name</label
+                    >
+                    <input type="text" name="hotel_name" id="hotel_name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="hotel_price" class="form-label">
+                      Hotel Price Per Night</label
+                    >
+                    <input
+                      type="number"
+                      min="1"
+                      step="any"
+                      name="hotel_price"
+                      id="hotel_price"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="nu_room" class="form-label"> Number of rooms</label>
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      name="nu_room"
+                      id="nu_room"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="nu_nights" class="form-label">
+                      Number of Nights</label
+                    >
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      name="nu_nights"
+                      id="nu_nights"
+                    />
+                  </div>
+                </fieldset>
+                <!-- Page 2 -->
+                <fieldset
+                  id="signup-form-p-1"
+                  role="tabpanel"
+                  aria-labelledby="signup-form-h-1"
+                  class="body"
+                  aria-hidden="true"
+                  
+                >
+                  <legend>
+                    <span class="step-heading">Rooms Details: </span>
+                    <span class="step-number">Step 2 / 3</span>
+                  </legend>
+      
+                  <div class="form-select">
+                    <label for="room_perfix" class="select-form-label"
+                      >Room1 Prefix *</label
+                    >
+                    <div class="select-list">
+                      <select name="room_perfix" id="room_perfix">
+                        <option value="">Please choose</option>
+                        <option value="">Mrs</option>
+                        <option value="Australia">Mr</option>
+                        <option value="USA">Miss</option>
+                      </select>
+                    </div>
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="first_name2" class="form-label required"
+                      >First name</label
+                    >
+                    <input type="text" name="first_name2" id="first_name2" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="last_name2" class="form-label required"
+                      >Last name</label
+                    >
+                    <input type="text" name="last_name2" id="last_name2" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="check_in" class="form-label required"
+                      >Check In *</label
+                    >
+                    <input type="date" name="check_in" id="check_in" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="check_out" class="form-label required"
+                      >Check out *</label
+                    >
+                    <input type="date" name="check_out" id="check_out" />
+                  </div>
+      
+                  <div class="form-group form-group-radio">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radio1"
+                      name="optradio"
+                      value="option1"
+                      checked=""
+                    />Single
+                    <label class="form-check-label" for="radio1"></label>
+                  </div>
+                  <div class="form-group form-group-radio">
+                    <input
+                      type="radio"
+                      class="form-check-input"
+                      id="radio2"
+                      name="optradio"
+                      value="option2"
+                    />Double
+                    <label class="form-check-label" for="radio2"></label>
+                  </div>
+                </fieldset>
+                <!-- Page 3 -->
+                <fieldset
+                  id="signup-form-p-2"
+                  role="tabpanel"
+                  aria-labelledby="signup-form-h-2"
+                  class="body"
+                  aria-hidden="true"
+                  style="display: none;"
+                >
+                  <legend>
+                    <span class="step-heading">Address Details: </span>
+                    <span class="step-number">Step 3 / 4</span>
+                  </legend>
+                  <div class="form-group">
+                    <label for="street_address" class="form-label required"
+                      >Street Address</label
+                    >
+                    <input type="text" name="street_address" id="street_address" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="city" class="form-label required">City</label>
+                    <input type="text" name="city" id="city" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="province" class="form-label required"
+                      >State/Province</label
+                    >
+                    <input type="text" name="province" id="province" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="postal" class="form-label required"
+                      >Postal/Zip Code</label
+                    >
+                    <input type="text" name="postal" id="postal" />
+                  </div>
+                </fieldset>
+              </div>
+              <div class="form-footer">
+                <ul>
+                  <li><button id="" style="display: none; ">Previous</button></li>
+                  <li><button id="form-tab-active">Next</button></li>
+                  <li><button id="" style="display: none; ">Finish</button></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+          <div class="left-reservation-pg-content">
+            <img src="img/reservation-form-image.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start footer  -->
+    <div class="footer-img">
+      <div class="container">
+        <div class="footer">
+          <div class="wrap-footer">
+            <div class="left-footer">
+              <img class="footer-logo" src="img/logo-color-1.png" alt="logo" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur ut diam et nibh condimentum venenatis eu ac magnasin.
+                Quisque interdum est mauris, eget ullamcorper.
+              </p>
+              <ul>
+                <li>
+                  <a href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://youtube.com" target="_blank">
+                    <img src="img/youtube.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://facebook.com" target="_blank">
+                    <img src="img/facebook.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://vimeo.com" target="_blank">
+                    <img src="img/vimeo.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="right-footer">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>
+                  <img src="img/right-arrow.png" alt="icon" />
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="icon" />
+                  <a href="./about.html">About us</a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="icon" />
+                  <a href="./services.html">Services</a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="icon" />
+                  <a href="./reservation.html">Reservation</a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="icon" />
+                  <a href="./bookNow.html">Book Now</a>
+                </li>
+                <li>
+                  <img src="img/right-arrow.png" alt="icon" />
+                  <a href="./policy.html">Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="down-footer">
+            <h4>
+              All Rights Reserved © Smart lines for advanced systems 2007 - 2024
+            </h4>
+            <div class="checkin-cards">
+              <img src="img/checkinCards.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function mobileNavbar() {
+        var x = document.getElementById("navbar-mobile-size");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
